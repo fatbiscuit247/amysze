@@ -8,6 +8,13 @@
     body {
       font-family: 'Quicksand', sans-serif;
       margin: 0;
+      padding: 0;
+    }
+
+    .hero-image {
+      width: 100vw;
+      height: auto;
+      display: block;
     }
 
     .main {
@@ -17,29 +24,35 @@
       text-align: left;
     }
 
+    h1 {
+      font-size: 2.5rem;
+      margin: 40px 0 20px;
+      text-align: center;
+    }
+
     .section {
       margin-bottom: 30px;
     }
 
-    .portrait-banner {
-      width: 100%;
-      height: auto;
-      display: block;
+    .biography h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
     }
 
-    h1 {
-      text-align: center;
-      padding-top: 40px;
+    p {
+      line-height: 1.6;
+      margin-bottom: 1.2rem;
     }
   </style>
 </head>
-<img src="amysze.jpeg" alt="Amy Sze" class="portrait-banner">
 <body>
 
-  <h1>Amy Sze</h1>
-  
+  <!-- Full-width hero image (now spans 100% of the page width) -->
+  <img src="amysze.jpeg" alt="Amy Sze" class="hero-image" />
 
   <div class="main">
+    <h1>Amy Sze</h1>
+
     <div class="section biography">
       <h2>Biography</h2>
       <p>American violinist Amy Sze made her Carnegie debut at the age of 16 shortly after performing the Barber Violin Concerto with Edwin Outwater and the Eastern Sierra Symphony. She began playing the violin at the age of 3 and recently graduated from the Juilliard School where she studied with Professor Li Lin as a recipient of the Lily Z. Foldes Award. She is now studying with Martin Beaver as a graduate student of the Colburn Conservatory.</p>
