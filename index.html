@@ -8,7 +8,6 @@
     body {
       font-family: 'Quicksand', sans-serif;
       margin: 0;
-      display: flex;
     }
 
     .main {
@@ -22,19 +21,24 @@
       margin-bottom: 30px;
     }
 
-    .portrait {
+    .portrait-banner {
       width: 100%;
       height: auto;
-      border-radius: 10px;
-      margin: 20px 0;
+      display: block;
+    }
+
+    h1 {
+      text-align: center;
+      padding-top: 40px;
     }
   </style>
 </head>
 <body>
-  <div class="main">
-    <h1>Amy Sze</h1>
-    <img src="amysze.jpeg" alt="Amy Sze" class="portrait">
 
+  <h1>Amy Sze</h1>
+  <img src="amysze.jpeg" alt="Amy Sze" class="portrait-banner">
+
+  <div class="main">
     <div class="section biography">
       <h2>Biography</h2>
       <p>American violinist Amy Sze made her Carnegie debut at the age of 16 shortly after performing the Barber Violin Concerto with Edwin Outwater and the Eastern Sierra Symphony. She began playing the violin at the age of 3 and recently graduated from the Juilliard School where she studied with Professor Li Lin as a recipient of the Lily Z. Foldes Award. She is now studying with Martin Beaver as a graduate student of the Colburn Conservatory.</p>
@@ -45,13 +49,5 @@
     </div>
   </div>
 
-  <div class="sidebar">
-    <div class="section">
-      <h2>Links</h2>
-      <p><!-- Add links here, like your Instagram, YouTube, CV, etc. --></p>
-    </div>
-  </div>
 </body>
-</html>
-
 </html>
