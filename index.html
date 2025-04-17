@@ -21,24 +21,53 @@
       margin-bottom: 30px;
     }
 
+    .hero-container {
+      position: relative;
+      width: 100%;
+    }
+
     .portrait-banner {
       width: 100%;
       height: auto;
-      max-height: 300px;  /* Adjust this to your preference */
+      max-height: 500px;
       display: block;
       object-fit: contain;
     }
 
+    .hero-text {
+      position: absolute;
+      bottom: 20px;
+      right: 30px;
+      font-size: 2.2rem;
+      font-weight: 500;
+      color: #666; /* gray font */
+      background-color: rgba(255, 255, 255, 0.6); /* optional light background for contrast */
+      padding: 6px 12px;
+      border-radius: 6px;
+    }
+
     h1 {
-      text-align: center;
-      padding-top: 40px;
+      display: none; /* hide default heading above image */
+    }
+
+    .biography h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 1.2rem;
     }
   </style>
 </head>
 <body>
 
-  <h1>Amy Sze</h1>
-  <img src="amysze.jpeg" alt="Amy Sze" class="portrait-banner">
+  <!-- Hero section with overlay text -->
+  <div class="hero-container">
+    <img src="amysze.jpeg" alt="Amy Sze" class="portrait-banner">
+    <div class="hero-text">Amy Sze</div>
+  </div>
 
   <div class="main">
     <div class="section biography">
