@@ -8,6 +8,7 @@
     html {
       scroll-behavior: smooth;
     }
+
     body, html {
       margin: 0;
       padding: 0;
@@ -26,24 +27,22 @@
       display: block;
     }
 
-        .bio-image {
+    .bio-image {
       width: 100%;
       padding: 40px 0;
       text-align: center;
     }
-    
+
     .full-width-image {
       max-width: 100%;
       height: auto;
       display: block;
       margin: 0 auto;
     }
-    
-    
-          
-      #biography, #links {
-        scroll-margin-top: 200px; /* adjust based on your layout */
-      }
+
+    #biography, #links {
+      scroll-margin-top: 200px;
+    }
 
     .hero-name {
       position: absolute;
@@ -80,6 +79,7 @@
       padding: 60px 40px;
       display: flex;
       justify-content: center;
+      flex-direction: column;
     }
 
     .section {
@@ -111,11 +111,20 @@
       margin-top: 4rem;
     }
 
+    .links-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
     .links ul {
       list-style: none;
       padding: 0;
-      text-align: center;
       font-size: 1.5rem;
+      color: black;
     }
 
     .links ul li {
@@ -129,6 +138,24 @@
 
     .links ul li a:hover {
       color: #bbbbbb;
+    }
+
+    .link-image img {
+      max-width: 300px;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .links-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .link-image img {
+        max-width: 90%;
+      }
     }
   </style>
 </head>
@@ -148,7 +175,7 @@
 
   <!-- Biography section -->
   <div class="main">
-    <div class="section biography">
+    <div id="biography" class="section biography">
       <h2>Biography</h2>
       <p>American violinist Amy Sze made her Carnegie debut at the age of 16 shortly after performing the Barber Violin Concerto with Edwin Outwater and the Eastern Sierra Symphony. She began playing the violin at the age of 3 and recently graduated from the Juilliard School where she studied with Professor Li Lin as a recipient of the Lily Z. Foldes Award. She is now studying with Martin Beaver as a graduate student of the Colburn Conservatory.</p>
       <p>Amy has been a featured soloist with numerous orchestras including the Santa Maria Philharmonic, Eastern Sierra Symphony, Palisades Symphony, Antelope Valley Symphony, Mount Saint Mary’s Orchestra, among others. She was most recently selected to compete in the Isang Yun International Violin Competition and had won first prize in the Young Muse International Strings Competition, the Classics Alive National Auditions, and was a semifinalist in both the Stradivarius International Violin Competition and M-Prize International Chamber Music Competition.</p>
@@ -158,19 +185,26 @@
     </div>
 
     <div class="bio-image">
-    <img src="amysecond.jpeg" class="full-width-image">
+      <img src="amysecond.jpeg" class="full-width-image">
     </div>
-
   </div>
 
   <!-- Links section -->
   <div id="links" class="section links">
     <h2>Links</h2>
-    <ul>
-      <li><a href="https://instagram.com/ameliasze" target="_blank">Instagram</a></li>
-      <li><a href="https://youtube.com/amyszemusic" target="_blank">YouTube</a></li>
-      <li><a href="amyresume.pdf" target="_blank">Download CV</a></li>
-    </ul>
+    <div class="links-container">
+      <!-- Link list -->
+      <ul>
+        <li><a href="https://instagram.com/ameliasze" target="_blank">Instagram</a></li>
+        <li><a href="https://youtube.com/amyszemusic" target="_blank">YouTube</a></li>
+        <li><a href="amyresume.pdf" target="_blank">Download CV</a></li>
+      </ul>
+
+      <!-- Link photo -->
+      <div class="link-image">
+        <img src="amysecond.jpeg" alt="Amy Sze performing">
+      </div>
+    </div>
   </div>
 
 </body>
