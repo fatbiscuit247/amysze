@@ -9,7 +9,6 @@
       margin: 0;
       padding: 0;
       font-family: 'Quicksand', sans-serif;
-      
     }
 
     .hero-container {
@@ -24,21 +23,33 @@
       display: block;
     }
 
-    .hero-text {
+    .hero-name {
       position: absolute;
       top: 20px;
       left: 30px;
       font-size: 3.5rem;
       font-weight: 500;
       color: #777777; /* light gray */
-      
       padding: 0;
     }
 
+    .hero-link {
+      position: absolute;
+      top: 20px;
+      left: 140px;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #777777;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .hero-link:hover {
+      color: white;
+    }
 
     .main {
       max-width: 100%;
-   
       padding: 60px 40px;
       display: flex;
       justify-conent: center;
@@ -53,7 +64,7 @@
       font-size: 3.2rem;
       margin-bottom: 2rem;
     }
-    
+
     .biography p {
       text-align: left;
       font-size: 1.2rem;
@@ -66,6 +77,32 @@
       line-height: 1.8;
       margin-bottom: 1.6rem;
     }
+
+    .links h2 {
+      text-align: center;
+      font-size: 3rem;
+      margin-top: 4rem;
+    }
+
+    .links ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    .links ul li {
+      margin: 10px 0;
+    }
+
+    .links ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .links ul li a:hover {
+      color: #bbbbbb;
+    }
   </style>
 </head>
 <body>
@@ -73,7 +110,8 @@
   <!-- Hero image and overlay -->
   <div class="hero-container">
     <img src="amysze.jpeg" alt="Amy Sze" class="portrait-banner">
-    <div class="hero-text">Amy Sze</div>
+    <div class="hero-name">Amy Sze</div>
+    <a href="#links" class="hero-link">Links</a>
   </div>
 
   <!-- Biography section -->
@@ -86,6 +124,16 @@
       <p>She has also worked closely with prominent artists such as Rohan De Silva, Glenn Dicterow, Joseph Kalichstein, Martin Chalifour, and Alexander Treger. As a passionate chamber musician, she was selected for the Shenandoah String Quartet Program at the Heifetz International Music Institute, working with members of the Emerson, Borromeo, and American String Quartets. As a fellow at the Music Academy of the West, she performed the world premiere of Tom Cipullo’s “BonFire Opera” alongside mezzo-soprano Sasha Cooke and pianist John Churchwell.</p>
       <p>She was invited to participate in the 2019 Starling-Delay Symposium at the Juilliard School. Amy is also an avid jazz violinist and has performed with French violinist Gilles Apap and jazz pianist Matthew Whitaker. Amy’s violin and bow are generously on loan from the Maestro Foundation.</p>
     </div>
+  </div>
+
+  <!-- Links section -->
+  <div id="links" class="section links">
+    <h2>Links</h2>
+    <ul>
+      <li><a href="https://instagram.com/yourusername" target="_blank">Instagram</a></li>
+      <li><a href="https://youtube.com/yourchannel" target="_blank">YouTube</a></li>
+      <li><a href="resume.pdf" target="_blank">Download CV</a></li>
+    </ul>
   </div>
 
 </body>
