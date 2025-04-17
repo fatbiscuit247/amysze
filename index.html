@@ -8,6 +8,35 @@
     body {
       font-family: 'Quicksand', sans-serif;
       margin: 0;
+      padding: 0;
+    }
+
+    /* Hero image container spans full width */
+    .hero-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    /* Image fills entire viewport width */
+    .portrait-banner {
+      width: 100vw;
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Overlay text in bottom-right corner */
+    .hero-text {
+      position: absolute;
+      bottom: 20px;
+      right: 30px;
+      font-size: 2.2rem;
+      font-weight: 500;
+      color: #666;
+      background-color: rgba(255, 255, 255, 0.6); /* optional: improves contrast */
+      padding: 6px 12px;
+      border-radius: 6px;
     }
 
     .main {
@@ -19,35 +48,6 @@
 
     .section {
       margin-bottom: 30px;
-    }
-
-    .hero-container {
-      position: relative;
-      width: 100%;
-    }
-
-    .portrait-banner {
-      width: 100%;
-      height: auto;
-      max-height: 500px;
-      display: block;
-      object-fit: contain;
-    }
-
-    .hero-text {
-      position: absolute;
-      bottom: 20px;
-      right: 30px;
-      font-size: 2.2rem;
-      font-weight: 500;
-      color: #666; /* gray font */
-      background-color: rgba(255, 255, 255, 0.6); /* optional light background for contrast */
-      padding: 6px 12px;
-      border-radius: 6px;
-    }
-
-    h1 {
-      display: none; /* hide default heading above image */
     }
 
     .biography h2 {
@@ -63,12 +63,13 @@
 </head>
 <body>
 
-  <!-- Hero section with overlay text -->
+  <!-- Hero image and overlay -->
   <div class="hero-container">
     <img src="amysze.jpeg" alt="Amy Sze" class="portrait-banner">
     <div class="hero-text">Amy Sze</div>
   </div>
 
+  <!-- Biography section -->
   <div class="main">
     <div class="section biography">
       <h2>Biography</h2>
